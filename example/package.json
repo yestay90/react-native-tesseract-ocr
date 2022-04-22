@@ -13,21 +13,21 @@
   },
   "dependencies": {
     "@react-native-community/art": "^1.2.0",
-    "react": "16.11.0",
-    "react-native": "0.62.2",
-    "react-native-image-crop-picker": "^0.32.2",
-    "react-native-progress": "^4.0.3",
-    "react-native-tesseract-ocr": "link:../"
+    "react": "17.0.1",
+    "react-native": "0.64.2",
+    "react-native-image-crop-picker": "^0.36.3",
+    "react-native-progress": "^5.0.0",
+    "react-native-tesseract-ocr": "file:../"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.4",
-    "@babel/runtime": "^7.10.4",
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.12.5",
     "@react-native-community/eslint-config": "^2.0.0",
-    "babel-jest": "^26.1.0",
-    "eslint": "^7.4.0",
-    "jest": "^26.1.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.14.0",
+    "jest": "^26.6.3",
     "metro-react-native-babel-preset": "^0.60.0",
-    "react-test-renderer": "16.11.0"
+    "react-test-renderer": "17.0.1"
   },
   "jest": {
     "preset": "react-native"

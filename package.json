@@ -13,7 +13,10 @@
   "scripts": {
     "cz": "git-cz",
     "release": "standard-version",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean:node": "npm cache verify && rm -rf node_modules/ && npm --loglevel=error install",
+    "clean:ios": "rm -rf ios/build && rm -rf ios/Pods && cd ios && pod install && cd ..",
+    "clean:android": "rm -rf android/.gradle && rm -rf android/.idea && rm -rf android/build && rm -rf android/app/build "
   },
   "repository": {
     "type": "git",
@@ -38,16 +41,16 @@
   "licenseFilename": "LICENSE",
   "readmeFilename": "README.md",
   "peerDependencies": {
-    "react": "^16.8.1",
-    "react-native": ">=0.60.0-rc.0 <1.0.x"
+    "react": "^17.0.1",
+    "react-native": ">=0.64.0-rc.0 <1.0.x"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "cz-conventional-changelog": "^3.1.0",
     "husky": "^4.2.5",
-    "react": "^16.9.0",
-    "react-native": "^0.61.5",
+    "react": "^17.0.1",
+    "react-native": "^0.64.2",
     "standard-version": "^8.0.2"
   },
   "husky": {
